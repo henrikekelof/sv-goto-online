@@ -7,6 +7,7 @@
           uglify  = require('gulp-uglify'),
           path    = require('path'),
           gulp    = require('gulp'),
+          fs      = require('fs'),
 
           dir     = {
               dist: '',
@@ -34,6 +35,10 @@
     gulp.task('connect', function () {
         connect.server({
             root      : dir.dist,
+            https     : {
+                key : fs.readFileSync('_cert/localhost.key'),
+                cert: fs.readFileSync('_cert/localhost.crt')
+            },
             livereload: false
         });
     });
