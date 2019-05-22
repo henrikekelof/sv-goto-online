@@ -1,0 +1,32 @@
+{
+  "name": "GoToOnline",
+  "version": "1.0.0",
+  "description": "A bookmarklet to paste offline URL and go to online",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrikekelof/sv-goto-online.git"
+  },
+  "keywords": [
+    "Bookmarklet",
+    "Developer mode"
+  ],
+  "author": "Henrik Ekelöf",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/henrikekelof/sv-goto-online"
+  },
+  "homepage": "http://henrikekelof.github.io/sv-goto-online/",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-uglify": "^1.5.1",
+    "jshint-stylish": "^2.1.0"
+  }
+}

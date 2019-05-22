@@ -1,2 +1,5 @@
-# sv-goto-online
-Bookmarklet. Paste offline address - go to online version
+
+# SiteVision - Go To Online Version from Offline URL
+
+[See homepage](http://henrikekelof.github.io/sv-goto-online/)
+
