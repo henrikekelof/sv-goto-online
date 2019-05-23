@@ -1,1 +1,0 @@
-!function(i){"use strict";var t,e=window.prompt("Paste offline URL");e&&(t=e.split("/"),t.length>=5&&(t=t.slice(0,5),"edit"===t[3]&&"."===t[4].charAt(1)&&(t.splice(3,1),i.location.href=t.join("/")+".html")))}(window);

@@ -1,7 +1,7 @@
 {
-  "name": "GoToOnline",
+  "name": "GotoOnline",
   "version": "1.0.0",
-  "description": "A bookmarklet to paste offline URL and go to online",
+  "description": "A bookmarklet to paste offline URL and go to online version",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
   "homepage": "http://henrikekelof.github.io/sv-goto-online/",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^2.3.1",
     "gulp-eslint": "^5.0.0",
     "gulp-jscs": "^3.0.2",

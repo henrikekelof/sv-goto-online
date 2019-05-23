@@ -1,17 +1,20 @@
-(function (win) {
-    // win, doc, undefined
-    'use strict';
+/* global swal */
 
-    var result = window.prompt('Paste offline URL'),
-        parts;
+(function (win) {
+
+    'use strict';
 
     // Pasted URL
     // https://somedomain.se/edit/4.123456789012345678901234
-    // Go to:
+    // Goto:
     // https://somedomain.se/4.123456789012345678901234.html
 
-    if (result) {
-        parts = result.split('/');
+    swal({
+        title  : 'Goto online URL',
+        text   : 'Paste offline URL:',
+        content: 'input'
+    }).then(function (result) {
+        var parts = result && result.split('/');
         if (parts.length >= 5) {
             parts = parts.slice(0, 5);
             if (parts[ 3 ] === 'edit' && parts[ 4 ].charAt(1) === '.') {
@@ -19,6 +22,6 @@
                 win.location.href = parts.join('/') + '.html';
             }
         }
-    }
+    });
 
 }(window));
