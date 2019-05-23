@@ -19,7 +19,7 @@
     });
 
     gulp.task('js', [ 'eslint' ], function () {
-        return gulp.src([ '_js/vendor/sweetalert.min.js', '_js/bookmarklet.js' ])
+        return gulp.src([ '_js/vendor/sweetalert.js', '_js/bookmarklet.js' ])
             .pipe(concat('goto-online.min.js'))
             .pipe(uglify())
             .pipe(gulp.dest(''));
