@@ -19,9 +19,10 @@
     });
 
     gulp.task('js', [ 'eslint' ], function () {
-        return gulp.src([ '_js/vendor/sweetalert.js', '_js/bookmarklet.js' ])
+        // return gulp.src([ '_js/vendor/sweetalert.js', '_js/bookmarklet.js' ])
+        return gulp.src([ '_js/vendor/alertify.css.js', '_js/vendor/alertify.js', '_js/bookmarklet.js' ])
             .pipe(concat('goto-online.min.js'))
-            .pipe(uglify())
+            // .pipe(uglify())
             .pipe(gulp.dest(''));
 
     });
